@@ -1,0 +1,16 @@
+{
+  "name": "try-babel-plugin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest test.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.18.9",
+    "babel-plugin-tester": "^10.1.0",
+    "jest": "^28.1.3"
+  }
+}

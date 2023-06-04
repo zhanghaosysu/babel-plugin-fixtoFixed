@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`fixToFixedPlugin NumberLiteral: NumberLiteral 1`] = `
+
+123.456.toFixed(2)
+
+      ↓ ↓ ↓ ↓ ↓ ↓
+
+var fixedToFixed = function fixedToFixed(target, _n) {
+  var n = _n || 0;
+  return Number(Math.round(target + "e" + n) + "e-" + n).toFixed(n);
+};
+
+fixedToFixed(123.456, 2);
+
+
+`;
+
+exports[`fixToFixedPlugin nothing changed: nothing changed 1`] = `
+
+toFixed(2)
+
+      ↓ ↓ ↓ ↓ ↓ ↓
+
+var fixedToFixed = function fixedToFixed(target, _n) {
+  var n = _n || 0;
+  return Number(Math.round(target + "e" + n) + "e-" + n).toFixed(n);
+};
+
+toFixed(2);
+
+
+`;
